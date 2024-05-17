@@ -123,7 +123,7 @@
     }
 
     .main-nav {
-        background-color: rgba(255, 255, 255, 0.97);
+        background-color: rgba(255, 255, 255, 0.9);
         position: absolute;
         top: 0;
         left: 0;
@@ -133,6 +133,8 @@
         justify-content: center;
         align-items: center;
         transition: all 0.5s ease-in;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
 
         /* Allow NO transition at all */
         /* display: none; */
