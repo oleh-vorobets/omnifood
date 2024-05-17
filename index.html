@@ -19,7 +19,7 @@
     </head>
     <body>
         <!-- nav-open -->
-        <header class="header">
+        <header class="header" id="header">
             <a href="#">
                 <img
                     class="logo"
@@ -29,10 +29,18 @@
             </a>
             <nav class="main-nav">
                 <ul class="main-nav-list">
-                    <li><a href="#" class="main-nav-link">How it works</a></li>
-                    <li><a href="#" class="main-nav-link">Meals</a></li>
-                    <li><a href="#" class="main-nav-link">Testimonials</a></li>
-                    <li><a href="#" class="main-nav-link">Pricing</a></li>
+                    <li>
+                        <a href="#how" class="main-nav-link">How it works</a>
+                    </li>
+                    <li><a href="#meals" class="main-nav-link">Meals</a></li>
+                    <li>
+                        <a href="#testimonials" class="main-nav-link"
+                            >Testimonials</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#pricing" class="main-nav-link">Pricing</a>
+                    </li>
                     <li>
                         <a href="#" class="main-nav-link nav-cta"
                             >Try for free</a
@@ -66,11 +74,11 @@
                             personal tastes and nutritional needs.
                         </p>
                         <a
-                            href="#"
+                            href="#cta"
                             class="btn btn--full margin-right-sm main-btn"
                             >Start eating well</a
                         >
-                        <a href="#" class="btn btn--outline"
+                        <a href="#how" class="btn btn--outline"
                             >Learn more &darr;</a
                         >
                         <div class="delivered-meals">
@@ -146,7 +154,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-how">
+            <section class="section-how" id="how">
                 <div class="container">
                     <span class="subheading">How it works</span>
                     <h2 class="heading-secondary">
@@ -223,7 +231,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-meals">
+            <section class="section-meals" id="meals">
                 <div class="container center-text">
                     <span class="subheading">Meals</span>
                     <h2 class="heading-secondary">
@@ -397,7 +405,7 @@
                     <a href="#" class="link">See all recipes &rarr;</a>
                 </div>
             </section>
-            <section class="section-testimonials">
+            <section class="section-testimonials" id="testimonials">
                 <div class="testimonial-container">
                     <span class="subheading">Testimonials</span>
                     <h2 class="heading-secondary">
@@ -546,7 +554,7 @@
                     </figure>
                 </div>
             </section>
-            <section class="section-pricing">
+            <section class="section-pricing" id="pricing">
                 <div class="container">
                     <span class="subheading">Pricing</span>
                     <h2 class="heading-secondary">
@@ -697,7 +705,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-cta">
+            <section class="section-cta" id="cta">
                 <div class="container">
                     <div class="cta">
                         <div class="cta-text-box">
@@ -800,8 +808,8 @@
                         </li>
                     </ul>
                     <p class="copyright">
-                        Copyright &copy; 2024 by Omnifood, Inc. All rights
-                        reserved.
+                        Copyright &copy; <span class="current-year"></span> by
+                        Omnifood, Inc. All rights reserved.
                     </p>
                 </div>
                 <div class="address-col">
@@ -847,6 +855,7 @@
                 </nav>
             </div>
         </footer>
+        <script defer src="./js/script.js" type="module"></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
